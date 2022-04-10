@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-givofk&2((=3!p_w()8sy*)hjgt*o$$fx!a5l50pc*sytcy+)c
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'belha.herokuapp.com'
+    "belha.herokuapp.com"
 ]
 
 
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'simpleApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS':[Path(os.path.join(BASE_DIR,'templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
